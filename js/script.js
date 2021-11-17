@@ -8,3 +8,8 @@ $('.carousel.carousel-slider').carousel({
   fullWidth: true,
   indicators: true
 });
+
+//Parallax projet perso
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
