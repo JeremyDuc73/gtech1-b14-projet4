@@ -1,26 +1,152 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="/css/style.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html lang="fr" dir="ltr">
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="/css/style.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <!-- NAVBAR RESPONSIVE -->
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo">PROJETS</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="sass.html">Projet Léann</a></li>
+        <li><a href="badges.html">Projet Jérémy</a></li>
+        <li><a href="collapsible.html">Projet Commun</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR MOBILE -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Accueil</a></li>
+    <li><a href="badges.html">Projet Léann</a></li>
+    <li><a href="collapsible.html">Projet Jérémy</a></li>
+    <li><a href="mobile.html">Projet Commun</a></li>
+  </ul>
+
+  <!-- PRESENTATION EQUIPE -->
+  <div class="row">
+    <div class="col s12 m6 l3 offset-l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/jeremy.jpg">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/jeremy.jpg">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIV CAROUSEL PROJETS -->
+  <div class="row">
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+      <div class="carousel carousel-slider center">
+        <div class="carousel-item red white-text" href="#one!">
+          <h2>First Panel</h2>
+          <p class="white-text">This is your first panel</p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIV CARTES PROJETS -->
+  <div class="row">
+    <!-- CARTE PROJET LEANN -->
+    <div class="col s12 m6 l4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="img/sleepyfarmertitle.PNG">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Projet personnel de Léann<i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Tower defense<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+        <div class="card-action center">
+          <a class="waves-effect waves-light btn">button</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARTE PROJET JEREMY -->
+    <div class="col s12 m6 l4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="img/sleepyfarmertitle.PNG">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Projet personnel de Jérémy<i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Sleepy Farmer<i class="material-icons right">close</i></span>
+          <p class="flow-text">Dans ce jeu vous jouerez un enfant qui veut voler les fruits d’un fermier pendant sa sieste. Mais c’est sans compter les corbeaux qui rodent autour et qui feront du bruit si vous êtes repéré.</p>
+        </div>
+        <div class="card-action center">
+          <a class="waves-effect waves-light btn">button</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARTE PROJET COMMUN -->
+    <div class="col s12 m6 offset-m3 l4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="img/sleepyfarmertitle.PNG">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Projet commun<i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">C'est plus c'est moins<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+        <div class="card-action center">
+          <a class="waves-effect waves-light btn">button</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
 
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="js/jquery.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/script.js" charset="utf-8"></script>
-  </body>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
 </html>
