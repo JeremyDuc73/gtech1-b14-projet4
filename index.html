@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta charset="utf-8">
@@ -40,7 +40,26 @@
         <div class="card-image">
           <img src="img/jeremy.jpg">
           <span class="card-title">Card Title</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          <div class="fixed-action-btn click-to-toggle direction-top direction-left" style="position: absolute;">
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            <ul>
+              <li>
+                <a class="btn-floating red" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                  <i class="material-icons">insert_chart</i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-floating indigo lighten-1 modal-trigger" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);" href="#modaldiscordJ">
+                  <i class="material-icons">discord</i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-floating green" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                  <i class="material-icons">publish</i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="card-content">
           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -52,7 +71,26 @@
         <div class="card-image">
           <img src="img/jeremy.jpg">
           <span class="card-title">Card Title</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          <div class="fixed-action-btn click-to-toggle direction-top direction-left" style="position: absolute;">
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            <ul>
+              <li>
+                <a class="btn-floating red" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                  <i class="material-icons">insert_chart</i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-floating indigo lighten-1" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                  <i class="material-icons">discord</i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-floating green" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                  <i class="material-icons">publish</i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="card-content">
           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -140,13 +178,18 @@
   </div>
 
 
-
-
-
-
-  <!--JavaScript at end of body for optimized loading-->
-  <script src="js/jquery.js" charset="utf-8"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="js/script.js" charset="utf-8"></script>
+  <div id="modaldiscordJ" class="modal">
+    <div class="modal-content">
+      <h4>Discord de Jérémy DUC</h4>
+      <p class="flow-text">Nashoba#0001</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script src="js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
