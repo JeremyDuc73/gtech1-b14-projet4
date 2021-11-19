@@ -1,0 +1,24 @@
+body{
+  font-family: 'Aldrich', sans-serif;
+  background-image: url("../img/bg.png");
+}
+
+h1{
+  border: solid;
+  border-color: #F44336;
+}
+
+.instalogo{
+  padding: 8px;
+}
+
+.modaldiscord{
+  width: 500px;
+}
+.ancrenav:hover{
+  background:#F44336 !important;
+}
+
+.titresprojets{
+  font-size: 200% !important;
+}
