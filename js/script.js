@@ -37,3 +37,14 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.modal').modal();
 });
+
+//toast
+function showToastJ(){
+  M.toast({html: 'Projet réalisé par Jérémy Duc', completeCallback: function(){alert('Si vous avez des questions n\'hésitez pas à nous contacter via nos réseaux sur la page d\'accueil')}, classes: 'rounded'});
+}
+function showToastL(){
+  M.toast({html: 'Projet réalisé par Léann Farant', completeCallback: function(){alert('Si vous avez des questions n\'hésitez pas à nous contacter via nos réseaux sur la page d\'accueil')}, classes: 'rounded'});
+}
+function showToastC(){
+  M.toast({html: 'Projet réalisé par Jérémy Duc, Léann Farant et Tom Le Gros', completeCallback: function(){alert('Si vous avez des questions n\'hésitez pas à nous contacter via nos réseaux sur la page d\'accueil')}, classes: 'rounded'});
+}

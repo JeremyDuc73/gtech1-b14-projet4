@@ -22,3 +22,16 @@ h1{
 .titresprojets{
   font-size: 200% !important;
 }
+
+.headermodalprojets{
+  font-size: 150% !important;
+}
+.imgheadermodalprojets{
+  padding-right: 10px !important;
+}
+.modalCommun{
+  width: 500px; !important;
+}
+.textmodalprojets{
+  font-size: 130%;
+}
