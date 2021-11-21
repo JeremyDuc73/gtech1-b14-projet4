@@ -48,3 +48,9 @@ function showToastL(){
 function showToastC(){
   M.toast({html: 'Projet réalisé par Jérémy Duc, Léann Farant et Tom Le Gros', completeCallback: function(){alert('Si vous avez des questions n\'hésitez pas à nous contacter via nos réseaux sur la page d\'accueil')}, classes: 'rounded'});
 }
+
+const music = new Audio('img/timetime.mp3');
+
+function eg() {
+  music.play();
+}
